@@ -1,8 +1,8 @@
-# 🌿 The Herbalist's Codex
+# 🌿 The Apothecary's Codex
 
 > *A digital field journal documenting plants, their history, uses, folklore, and the stories found along the road.*
 
-**The Herbalist's Codex** is a front-end web development project designed as an interactive botanical codex belonging to a traveling herbalist and apothecary.
+**The Apothecary's Codex** is a front-end web development project designed as an interactive botanical codex belonging to a traveling herbalist and apothecary.
 
 The project combines **web development, botanical knowledge, historical research, and visual storytelling** to create something that feels less like a traditional website and more like a living field journal.
 
@@ -99,7 +99,7 @@ As the project develops, I intend to explore:
 ## 🗂️ Project Structure
 
 ```text
-Herbalists-Codex/
+Apothecary-Codex/
 │
 ├── index.html
 ├── README.md
