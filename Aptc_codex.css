@@ -2,6 +2,7 @@ body{
     background-color:	#86685a;
     color: #302925;
     text-align:justify;
+    font-family:"Merriweather", serif;
     }
 
     nav{ /*the indice or navigation for easy acess to the page important points*/
@@ -53,7 +54,8 @@ header{
 body #Topo { /*Thi is so i can change specifically the very first header on top without touching the others and vice versa.*/
     text-align: initial;
     background-color: #86685a ;
-    color:rgb(36, 21, 13);
+    color:rgb(253, 236, 215);
+
 }
 article{
 
@@ -63,8 +65,8 @@ article{
     article header{
         background-color:	#c5a891;
         position:relative ; /*This creates a reference point for positioned elements inside.*/
-        height:80px
-    }
+        height:80px;
+        }
         article header h1 {
             text-align:center;
             margin:0;
@@ -90,10 +92,12 @@ article{
     clear:both 
 }
 
+h1,h2,h3,h4{
+    font-family:"Cinzel", serif;
+    }
 
 footer{
     text-align:center;
     color:bisque;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
     
