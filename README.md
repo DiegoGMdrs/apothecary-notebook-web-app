@@ -97,7 +97,6 @@ As the project develops, I intend to explore:
 ---
 
 ## 🗂️ Project Structure
-
 ```text
 Apothecary-Codex/
 │
@@ -118,3 +117,19 @@ Apothecary-Codex/
     ├── icons/
     ├── textures/
     └── ...
+`````
+## 🗂️ Project Evolution
+<p text-align="center">
+  <h3>First Phase of the Project: Simple HTML estructure (COMPLETED)</h3>
+  <img src="Assets/Timeline/Projeto_aptcodex_tm1.png" width="700" alt="First phase of the project">
+</p>
+<p tex-align="center">
+  <h3>Second Phase of the Project: Added CSS-elements and a fixed subtle index (COMPLETED)</h3>
+  <img src="Assets/Timeline/Projeto_aptcodex_tm2.png" width="700" alt="Second phase of the project">
+</p>
+<p tex-align="center">
+<img src="Assets/Timeline/Projeto_aptcodex_tm2.1.png" width="700" alt="Index opened">
+</p>
+<p>
+    TO BE CONTINUED
+</p>
