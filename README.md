@@ -8,6 +8,7 @@ The project combines **web development, botanical knowledge, historical research
 
 The project is being developed incrementally as I learn new front-end technologies and programming concepts.
 
+🌐 SITE: https://diegogmdrs.github.io/apothecary-notebook-web-app/
 ---
 
 ## 📖 Project Concept
