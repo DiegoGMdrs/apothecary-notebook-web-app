@@ -1,0 +1,99 @@
+body{
+    background-color:	#86685a;
+    color: #302925;
+    text-align:justify;
+    }
+
+    nav{ /*the indice or navigation for easy acess to the page important points*/
+        background-color: #E8DED5;
+        position:fixed;
+        z-index:10; /*this makes sure the nav will always be visible above anythign else, in this case, the header articles who were on relative and absolute position
+        was getting above the nav, hiding it behind, this command let the nav always stays on top.*/
+        opacity: 0.35; /*This will let the nav be a little transparent before hovering*/
+        right:20px;
+        top:1%; /*This let we decide how much close to top will the nav be!*/
+        width:35px;
+        height:35px;
+        overflow:hidden; /*This let we say what happens when the content is too large to fit, in this case, it will hide said content*/
+        transition: height 0.3s, width 0.2s, opacity 0.3s; /*Allow we to change a property, in this case, height, widht and opacity, smoothly over a X duration, instead of been abrupt.*/
+        font-size:12px;
+        text-align:left; 
+        border-style: double;
+        }
+        nav h2{ /*This let we say what happens specifically to the h2 text inside the nav*/
+            text-align: center;
+            }
+        nav h3{ /*This let we say what happens specifically to the h3 text inside the nav*/
+            text-align: center;
+            }
+        .nav-content{ /*This is so the content inside the nav will not show normally aka when we are not hovering it.*/
+            display:none;
+            }
+        .nav-icon img{ /*this is setting the scroll icon inside the nav*/
+            height:35px;
+            }        
+        nav:hover {  /*this is the nav proprieties while the mouse is hovering over it*/
+            height:220px;
+            width:130px;
+            opacity:1; /*This is saying that when the mouse is hovering the nav, the opacity will go back at 100% so we can see what's inside clearly*/
+            }
+        nav:hover .nav-icon{ /*this is saying that when we are hovering the nav, what will happen to the specifically class content, in this case the icon will dissapear.*/
+            display:none;
+            }
+        nav:hover .nav-content{ /*this is saying that when we are hovering the navy, the previously hidden content will be displayed in block form. */
+            display:block;
+            }
+        
+
+header{
+    background-color:#c5a891;
+    padding-left:10px; /*Padding: the space between the border and the content.*/
+    padding-right:10px;
+}
+body #Topo { /*Thi is so i can change specifically the very first header on top without touching the others and vice versa.*/
+    text-align: initial;
+    background-color: #86685a ;
+    color:rgb(36, 21, 13);
+}
+article{
+
+    background-color:#fdf5e7;
+    padding: 10px;
+}
+    article header{
+        background-color:	#c5a891;
+        position:relative ; /*This creates a reference point for positioned elements inside.*/
+        height:80px
+    }
+        article header h1 {
+            text-align:center;
+            margin:0;
+            position:absolute;
+            top:50%; /*This put the "h1 BOX" on 50% distance place from the top*/
+            left:50%; /*This put the "h1 BOX" on 50% distance place from the left*/
+            transform: translate(-50%,-50%); /*Problem is, we dont want the box, we want the TEXT INSIDE THE BOX to be perfectly centered both vertically and horizontally,
+            SO "transform:TRANSLATE" let we moves the title back by half its size, centering it*/
+            }
+        article header h3 {
+            position: absolute;
+            top:0;
+            left:5px; /*Keeps the chapter number in the top-left corner*/
+            }
+    .watercolor_plants{ /*This is the watercolor pictures of the plants, classified so its easier to impact all of them at the same time*/
+        text-align: center;
+        }
+    .plant-photo{ /*This is the real photo of the plants and is been used to apply effects to all of the photos at the same time.*/
+        float:left; /* This property places an HTML element on the left or right side of its container, allowing text and inline elements to wrap around it*/
+        margin:15px;
+        }
+.uses{ /* this class is been use to apply "clear both" to all "Uses" containers so it wont mix with the "photo-of-plants" floating just before.*/
+    clear:both 
+}
+
+
+footer{
+    text-align:center;
+    color:bisque;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    

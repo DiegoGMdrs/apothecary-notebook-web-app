@@ -3,38 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Aptc_codex.css" /> <!--This lets me link this document with a CSS file so it can impact the style of this HTML, they need to be on the same paste inside the PC-->
     <title>O Codex do Apotecário</title>
   </head>
 <!-- My first mission will be create a blank HTML page, without design or interactive elements-->
-  <body align="justify">
-    <header>
-      <h1 align="initial">O Codex do Apotecário</h1>
+  <body>
+    <header id="Topo">
+      <h1>O Codex do Apotecário</h1>
       <p>Bem vindo ao <b>Codex do Apotecário</b> um diário de anotações sobre plantas, ervas e mistérios da floresta feito pelo nosso Aventureiro Apotecário. </p>
     </header>
 
-    <nav>
-        <!--The nav element represents a section of a page that links to other pages or to parts within the page: a section with navigation links--> 
-      <h2>Índice do Livro</h2>
+    <nav> <!--The nav element represents a section of a page that links to other pages or to parts within the page: a section with navigation links--> 
+      <div class="nav-icon"><img src="Nav_icon.png"></div> <!--The icon that will appear while the nav is collapsed-->
+      <div class="nav-content"> <!--Full navigation menu is revealed when the user hovers over the icon.-->
+        <h2>Índice do Codex</h2>
+      <h3><a href="#Topo">TOPO</a></h3>
       <ul>
-        <li>Acônito</li>
-        <li>Lavanda</li>
-        <li>Sálvia</li>
-        <li>Beladona</li>
-        <li>Mandrágora</li>
-        <li>Mil-folhas</li>
+        <li><a href="#Aconito">Acônito</a></li>
+        <li><a href="#Lavanda">Lavanda</a></li>
+        <li><a href="#Salvia">Sálvia</a></li>
+        <li><a href="#Beladona">Beladona</a></li>
+        <li><a href="#Mandragora">Mandrágora</a></li>
+        <li><a href="#Mil_Folhas">Mil-folhas</a></li>
       </ul>
+      </div>
     </nav>
 
-    <main>
-      <article id="Aconito">
+    <main> <!--Its the main content of this page, each article represents one plant chapter of the Codex-->
+      <article id="Aconito"> <!--Each article need a id so i can link them on the nav to make it easier to navegate on the page.-->
         <header>
-          <p>Capítulo I</p>
-          <h2>Acônito</h2>
+          <h3>Capítulo I</h3>
+          <h1>Acônito</h1>
         </header>
 
-        <figure align="center">
-          <img src="Wolfsbane_wtc.png" alt="Ilustração de uma planta medicinal em ambiente natural" height="350" />
-          <figcaption align="center">Acônito, bela e mortal.</figcaption>
+        <figure class="watercolor_plants"> <!--A watercolor picture of the plant-->
+          <img src="Wolfsbane_wtc.png" alt="Ilustração em watercolor de uma planta medicinal em ambiente natural" height="350" />
+          <figcaption align="center">Acônito, dominadora de feras.</figcaption>
         </figure>
 
         <p><strong>Nome Comum:</strong> Acônito</p>
@@ -48,8 +52,8 @@
          <p><strong>Outros nomes:</strong> Wolfsbane / Acónito / Capuz de Monge </p>
          <p><strong>Familia:</strong> Ranunculaceae — Buttercup family</p>
          <p><strong>Localização:</strong> Encontrado principalmente nas regiões montanhosas e zonas temperadas do Hemisfério Norte, abrangendo partes da Europa Ocidental e Central, Ásia e América do Norte</p>
-         <figure>
-          <img src="https://inaturalist-open-data.s3.amazonaws.com/photos/416861673/medium.jpeg" alt="Foto real de uma planta medicinal em ambiente natural" height="170" align="left" style="margin-right:10px;" />
+         <figure class="plant-photo">
+          <img src="https://inaturalist-open-data.s3.amazonaws.com/photos/416861673/medium.jpeg" alt="Foto real de uma planta medicinal em ambiente natural" height="170"; />
         </figure>
 
         <p>
@@ -64,7 +68,7 @@
           se misturam com a sombra das pedras.
         </p>
 
-    <section>
+    <section class="uses">
         <h3>Usos</h3>
         <ul>
           <li>Utilizada em infusões para dor intensa.</li>
@@ -78,7 +82,7 @@
           <li>No folclore, era utilizada como repelente de Lobisomens ou era utilizada para poções anti-licantropia, um tipo de veneno especifico para lobisomens.</li>
         </ul>
     </section>
-        <h3>Observações do boticário</h3>
+        <h3>Observações do apotecário</h3>
         <p>
          Aprendi a respeitar o acônito muito antes de aprender a reconhecer suas flores.
          É uma planta bonita, mas não há beleza que justifique descuido. Encontrei-a crescendo em encostas úmidas e frias,
@@ -90,12 +94,12 @@
 
       <article id="Lavanda">
         <header>
-          <p>Capítulo II</p>
-          <h2>lavanda</h2>
+          <h3>Capítulo II</h3>
+          <h1>Lavanda</h1>
         </header>
 
-        <figure align="center">
-          <img src="Lavender_wtc.png" alt="Flores de lavanda" height="350"/>
+        <figure class="watercolor_plants">
+          <img src="Lavender_wtc.png" alt="Ilustração em watercolor de Flores de lavanda" height="350"/>
           <figcaption>Lavanda, simbolo de limpeza e aroma.</figcaption>
         </figure>
 
@@ -109,8 +113,8 @@
          <p><strong>Outros nomes:</strong> Alfazema / Rosmaninho</p>
          <p><strong>Familia:</strong> Lamiaceae family</p>
          <p><strong>Localização:</strong> Originária da região do Mar Mediterrâneo, sul da Europa, norte da África, Arábia e Índia</p>
-         <figure>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Single_lavender_flower02.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" alt="Foto real de uma lavanda em ambiente natural" height="170" align="left" style="margin-right:10px;" />
+         <figure class="plant-photo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Single_lavender_flower02.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" alt="Foto real de uma lavanda em ambiente natural" height="170"/>
         </figure>
         
         <p>
@@ -121,6 +125,7 @@
           o cansaço do corpo e da mente.
         </p>
 
+    <section class="uses">
         <h3>Usos</h3>
         <ul>
           <li>Usada em perfumaria e em velas de casa.</li>
@@ -135,7 +140,9 @@
           <li>Durante a Peste Negra, acreditavam que plantas aromáticas, incluindo a lavanda, purificava o ar e afastava a peste.</li>
           <li>A Lavanda era considerada uma das flores favoritas das fadas e acreditavam que ela era capaz de atrair-las para os jardins.</li>
         </ul>
-        <h3>Observações do boticário</h3>
+    </section>
+
+        <h3>Observações do apotecário</h3>
         <p>
           Poucas coisas tornam um abrigo mais acolhedor depois de uma longa viagem do que o aroma de lavanda.
           Costumo pendurar alguns ramos próximos ao meu leito e guardar outros entre as roupas.
@@ -144,14 +151,14 @@
         </p>
       </article>
 
-      <article id="Sage">
+      <article id="Salvia">
         <header>
-          <p>Capítulo III</p>
-          <h2>Common Sage</h2>
+          <h3>Capítulo III</h3>
+          <h1>Sálvia Comum</h1>
         </header>
 
-        <figure align="center">
-          <img src="Sage_wtc.png" alt="Ilustração de uma planta medicinal em ambiente natural" height="350" />
+        <figure class="watercolor_plants">
+          <img src="Sage_wtc.png" alt="Ilustração em watercolor de uma planta medicinal em ambiente natural" height="350" />
           <figcaption align="center">Common Sage, gosta de bastante sol e solos rochosos.</figcaption>
         </figure>
 
@@ -165,8 +172,8 @@
          <p><strong>Outros nomes:</strong> Sage / Sálvia / Sálvia-comum / Garden Sage</p>
          <p><strong>Familia:</strong> Lamiaceae - a famosa família das mentas.</p>
          <p><strong>Localização:</strong> A Salvia officinalis é uma planta do sul da Europa e da região mediterrânea, especialemnte associadas aos ambientes secos e ensolarados do Mediterrâneo e dos Bálcãs.</p>
-         <figure>
-          <img src="https://laidbackgardener.blog/wp-content/uploads/2021/01/20210112e-plantsoftheworldonline.org_.jpg" alt="Foto real de uma planta medicinal em ambiente natural" height="170" align="left" style="margin-right:10px;" />
+         <figure class="plant-photo">
+          <img src="https://laidbackgardener.blog/wp-content/uploads/2021/01/20210112e-plantsoftheworldonline.org_.jpg" alt="Foto real de uma planta medicinal em ambiente natural" height="170"/>
         </figure>
 
         <p>
@@ -177,7 +184,7 @@
           seja colocado nas costas da abelha, ajudando a transferir o polén para o lugar adequado.  
         </p>
 
-    <section>
+    <section class="uses">
         <h3>Usos</h3>
         <ul>
           <li>Historicamente, folhas de sálvia foram mastigadas ou utilizadas em preparações para higienização da boca.</li>
@@ -193,7 +200,7 @@
           <li>Gregos e romanos associavam a planta à clareza mental. Dizia-se que consumir sálvia regularmente aumentava a sabedoria, melhorava a memória e trazia bom senso</li>
         </ul>
     </section>
-        <h3>Observações do boticário</h3>
+        <h3>Observações do apotecário</h3>
         <p>
           As folhas mais aromáticas foram colhidas no início do outono.
           As plantas expostas ao sol da manhã parecem desenvolver um perfume mais intenso do que aquelas cultivadas à sombra.
@@ -202,14 +209,14 @@
 
       </article>
 
-      <article id="Belladona">
+      <article id="Beladona">
         <header>
-          <p>Capítulo IV</p>
-          <h2>Belladona</h2>
+          <h3>Capítulo IV</h3>
+          <h1>Beladona</h1>
         </header>
 
-        <figure align="center">
-          <img src="Belladona_wtc.png" alt="Ilustração de uma planta medicinal em ambiente natural" height="350" />
+        <figure class="watercolor_plants">
+          <img src="Belladona_wtc.png" alt="Ilustração em watercolor de uma planta medicinal em ambiente natural" height="350" />
           <figcaption align="center">Belladona, bela e mortal.</figcaption>
         </figure>
 
@@ -224,8 +231,8 @@
          <p><strong>Outros nomes:</strong> Erva-da-morte / Baga-da-bruxa / Deadly Nightshade </p>
          <p><strong>Familia:</strong> Solanaceae — a mesma de plantas conhecidas como o tomate, a batata, a berinjela e a pimenta</p>
          <p><strong>Localização:</strong> Nativa de regiões da Europa, além de partes da Ásia Ocidental e do Norte da África.</p>
-         <figure>
-          <img src="https://evergrowseeds.com/cdn/shop/articles/ChatGPT_Image_May_6_2026_05_59_22_PM.png?v=1778070857&width=2048" alt="Foto real de uma planta medicinal em ambiente natural" height="170" align="left" style="margin-right:10px;" />
+         <figure class="plant-photo">
+          <img src="https://evergrowseeds.com/cdn/shop/articles/ChatGPT_Image_May_6_2026_05_59_22_PM.png?v=1778070857&width=2048" alt="Foto real de uma planta medicinal em ambiente natural" height="170" />
         </figure>
 
         <p>
@@ -238,7 +245,7 @@
           Seu suco também foi utilizado como cosmético, principalmente para dilatar as pupilas e tornar os olhos aparentemente maiores. 
         </p>
 
-    <section>
+    <section class="uses">
         <h3>Usos</h3>
         <ul>
           <li>Seu principal e mais conhecido uso era na industria estética ou de oftmologia para dilatação das pupilas, sintoma inclusive de seu envenenamento </li>
@@ -256,7 +263,7 @@
           ao lado da mandrágora e do meixendro. Seu maior mito era que era utilizada para unguentos para voo.</li>
         </ul>
     </section>
-        <h3>Observações do boticário</h3>
+        <h3>Observações do apotecário</h3>
         <p>
         Certa vez, quando era um jovem viajante, cheguei a confundir os frutos da beladona com pequenas bagas silvestres.
         Felizmente, uma senhora que passava reconheceu a planta antes que eu pudesse prová-las. 
@@ -268,12 +275,12 @@
 
       <article id="Mandragora">
         <header>
-          <p>Capítulo V</p>
-          <h2>Mandrágora</h2>
+          <h3>Capítulo V</h3>
+          <h1>Mandrágora</h1>
         </header>
 
-        <figure align="center">
-          <img src="mandragora_wtc.png" alt="Ilustração de uma planta medicinal em ambiente natural" height="350" />
+        <figure class="watercolor_plants">
+          <img src="mandragora_wtc.png" alt="Ilustração em watercolor de uma planta medicinal em ambiente natural" height="350" />
           <figcaption align="center">Mandrágora, amor e veneno.</figcaption>
         </figure>
 
@@ -290,8 +297,8 @@
          <p><strong>Familia:</strong> Solanaceae — a mesma de plantas conhecidas como o tomate, a batata, a berinjela e a pimenta</p>
          <p><strong>Localização:</strong> é originária e encontrada principalmente na região do Mediterrâneo (sul da Europa, norte da África e Oriente Médio),
           estendendo-se por partes do Sudoeste da Ásia e chegando esporadicamente até regiões como o Himalaia</p>
-         <figure>
-          <img src="https://ogden_images.s3.amazonaws.com/www.motherearthliving.com/images/2011/09/20114754/HBC-ON11-is11529198m-mandrake.jpg" alt="Foto real de uma planta medicinal em ambiente natural" height="170" align="left" style="margin-right:10px;" />
+         <figure class="plant-photo">
+          <img src="https://ogden_images.s3.amazonaws.com/www.motherearthliving.com/images/2011/09/20114754/HBC-ON11-is11529198m-mandrake.jpg" alt="Foto real de uma planta medicinal em ambiente natural" height="170" />
         </figure>
 
         <p>
@@ -304,7 +311,7 @@
           muitas vezes assemelhando-se à forma humana
         </p>
 
-    <section>
+    <section class="uses">
         <h3>Usos</h3>
         <ul>
           <li>Utilizada na antiguidade e na Idade Média como analgésico e anestésico pré-cirúrgico, sedativo.</li>
@@ -322,7 +329,7 @@
           <li>Em práticas de feitiçaria, bruxaria e misticismo, foi utilizada como amuleto de proteção contra energias negativas, para atrair prosperidade ou sorte.</li>
         </ul>
     </section>
-        <h3>Observações do boticário</h3>
+        <h3>Observações do apotecário</h3>
         <p>
          A primeira mandrágora que encontrei crescia junto a um caminho pedregoso, quase escondida entre outras plantas. Sua raiz realmente possuía uma forma curiosamente humana,
          embora eu não tenha ouvido grito algum ao retirá-la da terra. Talvez algumas histórias tenham apenas crescido junto com a planta.
@@ -330,14 +337,14 @@
 
       </article>
 
-      <article id="Mil_folhas">
+      <article id="Mil_Folhas">
         <header>
-          <p>Capítulo VI</p>
-          <h2>Mil-Folhas</h2>
+          <h3>Capítulo VI</h3>
+          <h1>Mil-Folhas</h1>
         </header>
 
-        <figure align="center">
-          <img src="Mil_folhas_wtc.png" alt="Mil-Folhas" height="350"/>
+        <figure class="watercolor_plants">
+          <img src="Mil_folhas_wtc.png" alt="Ilustração em watercolor de uma planta medicinal" height="350"/>
           <figcaption>Mil-folhas.</figcaption>
         </figure>
 
@@ -351,15 +358,15 @@
          <p><strong>Outros nomes:</strong> Yarrow / Milefólio / Erva-dos-soldados / Achillea</p>
          <p><strong>Familia:</strong> Asteraceae family — família também das margaridas e girassóis</p>
          <p><strong>Localização:</strong>  É nativa das regiões temperadas da Europa, Ásia e América do Norte, mas que se encontra amplamente naturalizada e cultivada em diversas partes do mundo, inclusive no Brasil.</p>
-         <figure>
-          <img src="https://wardsnursery.com/wp-content/uploads/2025/02/DETA-10014.jpg" alt="Foto real de uma lavanda em ambiente natural" height="170" align="left" style="margin-right:10px;" />
+         <figure class="plant-photo">
+          <img src="https://wardsnursery.com/wp-content/uploads/2025/02/DETA-10014.jpg" alt="Foto real de uma lavanda em ambiente natural" height="170" />
         </figure>
         
         <p>
            A mil-folhas é uma planta perene de aparência delicada, mas é bastante resistente. Prefere locais com exposição plena ao sol e solos secos a moderadamente úmidos, leves e bem drenados, tolerando bem solos pobres e períodos de seca. 
            Suas folhas verdes são estreitas e profundamente divididas, formando pequenos segmentos que dão origem a seu nome. As flores surgem agrupadas no topo da planta e podem variar de coloração. Ela gosta de regiões abertas e é facilmente encontrada junto a caminhos e áreas de pastagem.
         </p>
-
+      <section class="uses">
         <h3>Usos</h3>
         <ul>
           <li>Usada para melhorar a saúde digestiva, auxiliando no tratamento da má digestão, desconfortos gastrointestinais e atua como estimulante biliar.</li>
@@ -375,7 +382,9 @@
           <li>Ainda na china. Acredita-se que a planta cresce em locais onde a energia espiritual (Qi) é excepcionalmente pura e equilibrada, funcionando como uma antena entre o Céu e a Terra.</li>
           <li>Nas tradições britânicas, em casamentos, ela era adicionada aos buquês e guirlandas para garantir que o amor dos noivos durasse pelo menos sete anos.</li>
       </ul>
-        <h3>Observações do boticário</h3>
+      </section>
+
+        <h3>Observações do apotecário</h3>
         <p>
           Pisque o olho e você perderá a chance de reconhecer essa planta magnifica mas de aparência extremamente ordinária. Uma viajante que dividia o abrigo comigo reconheceu a planta e me contou como sua avó costumava guardá-la seca durante as viagens.
           Anotei o nome naquela noite. Desde então, nunca mais passei por uma sem reconhecê-la e ela ja me salvou de alguns problemas e machucados. Caminhe de olhos atentos e sempre pegue algumas pra levar com você. 
@@ -385,7 +394,7 @@
     </main>
 
     <footer>
-      <p>Diário do boticário encerrado por hoje.</p>
+      <p><strong>Diário do apotecário encerrado por hoje.</strong> </p>
     </footer>
   </body>
 </html>
