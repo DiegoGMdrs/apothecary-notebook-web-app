@@ -1,3 +1,6 @@
+:root {
+    interpolate-size: allow-keywords;
+    }
 body{
     background-color:	#86685a;
     color: #302925;
@@ -18,8 +21,9 @@ body{
         top:1%; /*This let we decide how much close to top will the nav be!*/
         width:35px;
         height:35px;
+        line-height: normal;
         overflow:hidden; /*This let we say what happens when the content is too large to fit, in this case, it will hide said content*/
-        transition: height 0.3s, width 0.2s, opacity 0.3s; /*Allow we to change a property, in this case, height, widht and opacity, smoothly over a X duration, instead of been abrupt.*/
+        transition: height 0.3s ease-in-out, width 0.2s ease-in-out, opacity 0.3s ease-in-out; /*Allow we to change a property, in this case, height, widht and opacity, smoothly over a X duration, instead of been abrupt.*/
         font-size:12px;
         text-align:left; 
         border-style: double;
@@ -31,21 +35,25 @@ body{
             text-align: center;
             }
         .nav-content{ /*This is so the content inside the nav will not show normally aka when we are not hovering it.*/
-            display:none;
+              opacity: 0;
+              transition: opacity 0.5s ease-in-out;
             }
         .nav-icon img{ /*this is setting the scroll icon inside the nav*/
             height:35px;
             }        
         nav:hover {  /*this is the nav proprieties while the mouse is hovering over it*/
-            height:220px;
-            width:130px;
+            height:auto;
+            max-height: 500px;
+            width: 130px;
             opacity:1; /*This is saying that when the mouse is hovering the nav, the opacity will go back at 100% so we can see what's inside clearly*/
             }
         nav:hover .nav-icon{ /*this is saying that when we are hovering the nav, what will happen to the specifically class content, in this case the icon will dissapear.*/
-            display:none;
+            opacity: 0;
+            height: 0;
+            overflow: hidden;;
             }
         nav:hover .nav-content{ /*this is saying that when we are hovering the navy, the previously hidden content will be displayed in block form. */
-            display:block;
+            opacity: 1;
             }
         
 
