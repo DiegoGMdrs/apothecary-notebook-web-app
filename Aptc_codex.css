@@ -3,6 +3,9 @@ body{
     color: #302925;
     text-align:justify;
     font-family:"Merriweather", serif;
+    font-size: 16px;
+    line-height: 1.5;
+
     }
 
     nav{ /*the indice or navigation for easy acess to the page important points*/
@@ -65,7 +68,7 @@ article{
     article header{
         background-color:	#c5a891;
         position:relative ; /*This creates a reference point for positioned elements inside.*/
-        height:80px;
+        height:70px;
         }
         article header h1 {
             text-align:center;
@@ -75,18 +78,29 @@ article{
             left:50%; /*This put the "h1 BOX" on 50% distance place from the left*/
             transform: translate(-50%,-50%); /*Problem is, we dont want the box, we want the TEXT INSIDE THE BOX to be perfectly centered both vertically and horizontally,
             SO "transform:TRANSLATE" let we moves the title back by half its size, centering it*/
+            font-size:clamp(12px,4vw,32px);
             }
         article header h3 {
             position: absolute;
             top:0;
             left:5px; /*Keeps the chapter number in the top-left corner*/
+            font-size:clamp(10px,2vw,18px);
             }
     .watercolor_plants{ /*This is the watercolor pictures of the plants, classified so its easier to impact all of them at the same time*/
         text-align: center;
         }
+    .watercolor_plants img{  /*This is making the image change sizes depending of the screen size*/
+        width:350px;
+        max-width: 100%;
+        height: auto;
+        }
     .plant-photo{ /*This is the real photo of the plants and is been used to apply effects to all of the photos at the same time.*/
-        float:left; /* This property places an HTML element on the left or right side of its container, allowing text and inline elements to wrap around it*/
-        margin:15px;
+        float:left;
+        }
+    .plant-photo img{ /*This is making the image change sizes depending of the screen size*/
+        width:200px;
+        max-width: 100%;
+        height: auto;
         }
 .uses{ /* this class is been use to apply "clear both" to all "Uses" containers so it wont mix with the "photo-of-plants" floating just before.*/
     clear:both 
@@ -101,3 +115,16 @@ footer{
     color:bisque;
     }
     
+/*RESPONSIVE DESIGN: What the program will do/change when its been viewed on a smaller screen*/
+@media (max-width: 768px){
+    body{
+        font-size:12px;
+        }
+    article{
+        padding: 5px;
+        }
+    .plant-photo{
+        float:none;
+        text-align:center;
+        }
+}
